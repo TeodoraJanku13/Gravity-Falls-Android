@@ -1,0 +1,836 @@
+fileFormatVersion: 2
+guid: 6b004b0e730b1164d9cf8df17e783889
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5139568832798656105
+    second: CandyAllPlus_0
+  - first:
+      213: 5972957225313208184
+    second: CandyAllPlus_1
+  - first:
+      213: -5517598211969528489
+    second: CandyAllPlus_2
+  - first:
+      213: 2978175237211037149
+    second: CandyAllPlus_3
+  - first:
+      213: -7580763319735399318
+    second: CandyAllPlus_4
+  - first:
+      213: 1745778346979062311
+    second: CandyAllPlus_5
+  - first:
+      213: 6749185989051293096
+    second: CandyAllPlus_6
+  - first:
+      213: -282138756859713960
+    second: CandyAllPlus_7
+  - first:
+      213: 8924052249115518950
+    second: CandyAllPlus_8
+  - first:
+      213: -1693907796990699273
+    second: CandyAllPlus_9
+  - first:
+      213: -9041443762094144361
+    second: CandyAllPlus_10
+  - first:
+      213: 7528604149052736282
+    second: CandyAllPlus_11
+  - first:
+      213: -5879098504379120039
+    second: CandyAllPlus_12
+  - first:
+      213: -2905264356792869805
+    second: CandyAllPlus_13
+  - first:
+      213: 5875770578959234650
+    second: CandyAllPlus_14
+  - first:
+      213: -4152691508814104700
+    second: CandyAllPlus_15
+  - first:
+      213: -5393435406101251218
+    second: CandyAllPlus_16
+  - first:
+      213: 6321037081072750436
+    second: CandyAllPlus_17
+  - first:
+      213: 6504129786699419185
+    second: CandyAllPlus_18
+  - first:
+      213: 409618727359287613
+    second: CandyAllPlus_19
+  - first:
+      213: -5329078453792142693
+    second: CandyAllPlus_20
+  - first:
+      213: -633910389709047776
+    second: CandyAllPlus_21
+  - first:
+      213: -5593103781086975302
+    second: CandyAllPlus_22
+  - first:
+      213: -5424047397031489584
+    second: CandyAllPlus_23
+  - first:
+      213: 7887711614587085135
+    second: CandyAllPlus_24
+  - first:
+      213: 4849566377703185726
+    second: CandyAllPlus_25
+  - first:
+      213: -1268827117408458467
+    second: CandyAllPlus_26
+  - first:
+      213: 2280304412952288382
+    second: CandyAllPlus_27
+  - first:
+      213: -414901961119227469
+    second: CandyAllPlus_28
+  - first:
+      213: -5619313277182845567
+    second: CandyAllPlus_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CandyAllPlus_0
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 406
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96602a17f9a635740800000000000000
+      internalID: 5139568832798656105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_1
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 406
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877856943f434e250800000000000000
+      internalID: 5972957225313208184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_2
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 406
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dc932e8ad8d63b0800000000000000
+      internalID: -5517598211969528489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_3
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 410
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd14d4699a945920800000000000000
+      internalID: 2978175237211037149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_4
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 410
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c4cd0ece7bbc690800000000000000
+      internalID: -7580763319735399318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_5
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 409
+        width: 58
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722714438204a3810800000000000000
+      internalID: 1745778346979062311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_6
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 409
+        width: 57
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad1278f5ece9ad50800000000000000
+      internalID: 6749185989051293096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_7
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 407
+        width: 70
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856a104ab44a51cf0800000000000000
+      internalID: -282138756859713960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_8
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 314
+        width: 70
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e76e892d3a98db70800000000000000
+      internalID: 8924052249115518950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_9
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 303
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8da1655d70e78e0800000000000000
+      internalID: -1693907796990699273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_10
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 303
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79405bf4dc6568280800000000000000
+      internalID: -9041443762094144361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_11
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 303
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1302d6d599fa7860800000000000000
+      internalID: 7528604149052736282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_12
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 314
+        width: 71
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956c3fe1f0f396ea0800000000000000
+      internalID: -5879098504379120039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_13
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 314
+        width: 70
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cd1c2d57d6ea7d0800000000000000
+      internalID: -2905264356792869805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_14
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 303
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a567e8cd53eea8150800000000000000
+      internalID: 5875770578959234650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_15
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 303
+        width: 57
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487ba5b131dae56c0800000000000000
+      internalID: -4152691508814104700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_16
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 206
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bf154e21ba625b0800000000000000
+      internalID: -5393435406101251218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_17
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 188
+        width: 81
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fc9652cb5d8b750800000000000000
+      internalID: 6321037081072750436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_18
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 196
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e8145a49f434a50800000000000000
+      internalID: 6504129786699419185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_19
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 216
+        width: 78
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d311991ff024fa500800000000000000
+      internalID: 409618727359287613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_20
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 207
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a0885816f4b06b0800000000000000
+      internalID: -5329078453792142693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_21
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 210
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02876f1fbd5e337f0800000000000000
+      internalID: -633910389709047776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_22
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 209
+        width: 84
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaaa60aebd4162b0800000000000000
+      internalID: -5593103781086975302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_23
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 69
+        width: 78
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df4e0751a9e9b4b0800000000000000
+      internalID: -5424047397031489584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_24
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 69
+        width: 78
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41af2e2ce7c67d60800000000000000
+      internalID: 7887711614587085135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_25
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 68
+        width: 78
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d1da92dee1d4340800000000000000
+      internalID: 4849566377703185726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_26
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 68
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d196c719578346ee0800000000000000
+      internalID: -1268827117408458467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_27
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 77
+        width: 82
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cd6c138c445af10800000000000000
+      internalID: 2280304412952288382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_28
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 69
+        width: 86
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b120e65dd8fd3af0800000000000000
+      internalID: -414901961119227469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CandyAllPlus_29
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 57
+        width: 134
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d51e7c8503402b0800000000000000
+      internalID: -5619313277182845567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

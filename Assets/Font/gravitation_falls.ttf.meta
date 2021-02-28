@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 7835d2727c801ec4fa1b55655bc65dce
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gravitation Falls
+  fontNames:
+  - Gravitation Falls
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 549bf683ca76e7c4e9b2a33ed40a86c1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

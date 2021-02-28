@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Boundary
+  - Candy
+  - PowerUp
+  - SpeedUp
+  - CandySpawner
+  - MoveButton
+  - DoublePoints
+  - ExtraHealth
+  - GameManager
+  - SideBoundary
+  - ArcadeButton
+  - IsCleared
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3244889453
+    locked: 0
+  - name: MiddleGround
+    uniqueID: 3111336557
+    locked: 0
+  - name: ForeGround
+    uniqueID: 1392960777
+    locked: 0
