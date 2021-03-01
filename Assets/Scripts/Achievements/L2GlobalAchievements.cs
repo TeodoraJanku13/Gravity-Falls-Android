@@ -80,7 +80,7 @@ public class L2GlobalAchievements : MonoBehaviour
         achActive = true;
         ach04Code = 004;
         PlayerPrefs.SetInt("Ach04", ach04Code);
-        //achSound.Play();
+        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
         ach04Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "COLLECTED";
         achDescription.GetComponent<Text>().text = "Congrats! You have collected 3 Extra Lives!";
@@ -100,7 +100,7 @@ public class L2GlobalAchievements : MonoBehaviour
         achActive = true;
         ach05Code = 005;
         PlayerPrefs.SetInt("Ach05", ach05Code);
-        //achSound.Play();
+        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
         ach05Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "COLLECTED";
         achDescription.GetComponent<Text>().text = "Congrats! You have collected 20 Apples!";
@@ -120,7 +120,7 @@ public class L2GlobalAchievements : MonoBehaviour
         achActive = true;
         ach06Code = 006;
         PlayerPrefs.SetInt("Ach06", ach06Code);
-        //achSound.Play();
+        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
         ach06Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "COLLECTED";
         achDescription.GetComponent<Text>().text = "Congrats! You have collected 10 SUPER Candies!";

@@ -8,7 +8,7 @@ public class GlobalAchievemetns : MonoBehaviour
     public GameManager gameManager;
     //GeneralVariables
     public GameObject achPanel;
-    // public AudioSource achSOund;
+   // public AudioSource achSound;
     public bool achActive = false;
     public GameObject achTitle;
     public GameObject achDescription;
@@ -86,11 +86,12 @@ public class GlobalAchievemetns : MonoBehaviour
 
     IEnumerator TriggerAch01()
     {
+        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
         ach1 = true;
         achActive = true;
         ach01Code = 001;
         PlayerPrefs.SetInt("Ach01", ach01Code);
-        //achSound.Play();
+       // achSound.Play();
         ach01Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "COLLECTED";
         achDescription.GetComponent<Text>().text = "Congrats! You have collected 50 candies!";
@@ -110,7 +111,7 @@ public class GlobalAchievemetns : MonoBehaviour
         achActive = true;
         ach02Code = 002;
         PlayerPrefs.SetInt("Ach02", ach02Code);
-        //achSound.Play();
+        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
         ach02Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "WELL PLAYED";
         achDescription.GetComponent<Text>().text = "Congrats! You have played for 60 seconds!";
@@ -138,7 +139,7 @@ public class GlobalAchievemetns : MonoBehaviour
         achActive = true;
         ach03Code = 003;
         PlayerPrefs.SetInt("Ach03", ach03Code);
-        //achSound.Play();
+        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
         ach03Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "COLLECTED";
         achDescription.GetComponent<Text>().text = "Congrats! You have collected 3 power ups!";

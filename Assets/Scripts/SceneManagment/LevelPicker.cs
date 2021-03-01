@@ -18,30 +18,36 @@ public class LevelPicker : MonoBehaviour
     }
     public void Level1Story()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("Level1");
     }
 
     public void Level2Story()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("Level2");
     }
 
     public void Level3Story()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("Level3");
     }
     public void Level1Arcade()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("Level1A");
     }
 
     public void Level2Arcade()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("Level2A");
     }
 
     public void Level3Arcade()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("Level3A");
     }
 

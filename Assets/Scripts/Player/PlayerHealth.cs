@@ -43,6 +43,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage()
     {
+        FindObjectOfType<AudioManager>().Play("Heart_Lost");
+
         if (health ==1)
         {
             GameManager.instance.GameOver();

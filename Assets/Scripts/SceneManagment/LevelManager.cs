@@ -23,16 +23,19 @@ public class LevelManager : MonoBehaviour
 
     public void Level1Story()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("Level1");
     }
 
     public void Level2Story()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("Level2");
     }
 
     public void Level3Story()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("Level3");
     }
 

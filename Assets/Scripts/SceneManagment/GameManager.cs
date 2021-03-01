@@ -40,8 +40,72 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-       // highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
+        LevelMusic();
+    }
+
+
+
+    void LevelMusic()
+    {
         currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        switch (currentScene)
+        {
+            case 0:
+                AudioManager.instance.StopPlaying("L2Theme");
+                AudioManager.instance.StopPlaying("L3Theme");
+                AudioManager.instance.StopPlaying("L1Theme");
+                break;
+            case 1:
+                //AudioManager.instance.Play("MenuTheme");
+                AudioManager.instance.StopPlaying("L2Theme");
+                AudioManager.instance.StopPlaying("L3Theme");
+                AudioManager.instance.StopPlaying("L1Theme");
+                break;
+            case 2:
+                AudioManager.instance.Play("L1Theme");
+                AudioManager.instance.StopPlaying("L2Theme");
+                AudioManager.instance.StopPlaying("L3Theme");
+                AudioManager.instance.StopPlaying("MenuTheme");
+                break;
+            case 3:
+                AudioManager.instance.Play("L2Theme");
+                AudioManager.instance.StopPlaying("L1Theme");
+                AudioManager.instance.StopPlaying("L3Theme");
+                AudioManager.instance.StopPlaying("MenuTheme");
+                break;
+            case 4:
+                AudioManager.instance.Play("L3Theme");
+                AudioManager.instance.StopPlaying("L2Theme");
+                AudioManager.instance.StopPlaying("L1Theme");
+                AudioManager.instance.StopPlaying("MenuTheme");
+                break;
+            case 5:
+                // AudioManager.instance.Play("MenuTheme");
+                AudioManager.instance.StopPlaying("L2Theme");
+                AudioManager.instance.StopPlaying("L3Theme");
+                AudioManager.instance.StopPlaying("L1Theme");
+                break;
+            case (6):
+                AudioManager.instance.Play("L1Theme");
+                AudioManager.instance.StopPlaying("L2Theme");
+                AudioManager.instance.StopPlaying("L3Theme");
+                AudioManager.instance.StopPlaying("MenuTheme");
+                break;
+            case 7:
+                AudioManager.instance.Play("L2Theme");
+                AudioManager.instance.StopPlaying("L1Theme");
+                AudioManager.instance.StopPlaying("L3Theme");
+                AudioManager.instance.StopPlaying("MenuTheme");
+                break;
+            case 8:
+
+                AudioManager.instance.Play("L3Theme");
+                AudioManager.instance.StopPlaying("L2Theme");
+                AudioManager.instance.StopPlaying("L1Theme");
+                AudioManager.instance.StopPlaying("MenuTheme");
+                break;
+        }
 
     }
 
@@ -106,7 +170,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-
+        AudioManager.instance.Play("Panel_Popup");
         gameOverPanel.SetActive(true);
 
         heartContainer.SetActive(false);
@@ -138,6 +202,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
         if (currentScene == 2)
@@ -157,22 +222,33 @@ public class GameManager : MonoBehaviour
 
     public void ContinueBtn()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 
     public void MenuBtn()
     {
+        AudioManager.instance.Play("UI_Click_1");
+        SceneManager.LoadScene("Menu");
+        Time.timeScale = 1f;
+    }
+
+    public void BackToMenu()
+    {
+        AudioManager.instance.Play("UI_Click_Back");
         SceneManager.LoadScene("Menu");
         Time.timeScale = 1f;
     }
 
     public void StoryMode ()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("LoadSTORYmode");
     }
 
     public void ArcadeMode()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("LoadARCADEmode");
     }
 
@@ -201,12 +277,14 @@ public class GameManager : MonoBehaviour
 
     public void PlayArcadeMode ()
     {
+        AudioManager.instance.Play("UI_Click_1");
         SceneManager.LoadScene("LoadARCADEmode");
         
     }
 
     public void NextLevel()
     {
+        AudioManager.instance.Play("UI_Click_1");
         levelScript.PassLevel();
     }
 

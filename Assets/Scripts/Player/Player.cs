@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
 
         if (moveLeft)
         {
+
             rb.velocity = new Vector2(-moveSpeed, 0f);
         }
         if (moveRight)
@@ -89,7 +90,7 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(moveSpeed, 0f);
         }
 
-       // timerAnimation.canvasGroup.alpha = 0f;
+      
 
         if (timerAnimation.timerAnimator.gameObject.activeSelf && seconds == 0)
         {
@@ -109,6 +110,7 @@ public class Player : MonoBehaviour
     {
         if (collision.CompareTag("SpeedUp"))
         {
+            AudioManager.instance.Play("Super_PickUp");
             timerAnimation.ImageSpeed();
             textDisplay.SetActive(true);
             timerAnimation.timerAnimator.SetBool("TimerOn", true);
@@ -146,9 +148,18 @@ public class Player : MonoBehaviour
             powerupPickedUp += 1;
             pickedUpSpeed = true;
             GameObject.FindGameObjectWithTag("Boundary").transform.localScale = new Vector3(0, 0, 0);
-            GameObject.FindWithTag("CandySpawner").GetComponent<CandySpawner>().spawnInterval = 0.3f;
+
+            if (currentLevel == 6 || currentLevel == 7 || currentLevel == 8)
+            {
+                GameObject.FindWithTag("CandySpawner").GetComponent<CandySpawner>().timeDelay /= 2;
+            }
+            else
+            {
+                GameObject.FindWithTag("CandySpawner").GetComponent<CandySpawner>().timeDelay = 0.3f;
+            }
+            
             moveSpeed = 25f;
-            GetComponent<SpriteRenderer>().color = Color.magenta;
+            GetComponent<SpriteRenderer>().color = Color.yellow;
 
             StartCoroutine(ResetSpeed());
 
@@ -157,6 +168,7 @@ public class Player : MonoBehaviour
 
         if (collision.CompareTag("DoublePoints"))
         {
+            AudioManager.instance.Play("2x_Pickup");
             timerAnimation.ImageDouble();
             textDisplay.SetActive(true);
             timerAnimation.timerAnimator.SetBool("TimerOn", true);
@@ -297,8 +309,18 @@ public class Player : MonoBehaviour
         
         pickedUpSpeed = false;
         moveSpeed = 15f;
-        GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.5f, 0.85f);
-        GameObject.FindWithTag("CandySpawner").GetComponent<CandySpawner>().spawnInterval = 1f;
+        GetComponent<SpriteRenderer>().color = Color.yellow;
+        //GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.5f, 0.85f);
+
+        if (currentLevel == 6 || currentLevel == 7 || currentLevel == 8)
+        {
+            GameObject.FindWithTag("CandySpawner").GetComponent<CandySpawner>().timeDelay *= 2;
+        }
+        else
+        {
+            GameObject.FindWithTag("CandySpawner").GetComponent<CandySpawner>().timeDelay = 1f;
+        }
+       
         StartCoroutine(ResetBoundary());
     }
 

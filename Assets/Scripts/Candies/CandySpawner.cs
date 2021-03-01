@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CandySpawner : MonoBehaviour
 {
-    [SerializeField]
-    float maxPosX = 6.7f;
 
     public GameObject[] Candies;
 
     public static CandySpawner instance;
 
-    public float spawnInterval = 1f;
-    
+    public float timeDelay;
+
+    int currentLevel;
+
 
     private void Awake()
     {
@@ -25,38 +26,60 @@ public class CandySpawner : MonoBehaviour
 
     void Start()
     {
-        //  SpawnCandy ();
-
         StartSpawningCandies();
+        
+        timeDelay = 1f;
+        
+        currentLevel = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentLevel ==6 || currentLevel == 7 || currentLevel == 8)
+        {
+        StartCoroutine("IncreaseSpawnSpeed");
+        }
 
     }
 
-
-    void SpawnCandy()
+    private void Update()
     {
-        int randomSpawn = Random.Range(0, Candies.Length);
-
-        float randomX = Random.Range(-maxPosX, maxPosX);
-        Vector3 randomPosition = new Vector3(randomX, transform.position.y, transform.position.z);
-
-        Instantiate(Candies[randomSpawn], randomPosition, transform.rotation);
+       
     }
 
+
+ 
     IEnumerator SpawnCandies()
     {
-        yield return new WaitForSeconds(2f);
+       yield return new WaitForSeconds(2f);
 
         while (true)
         {
-            SpawnCandy();
+            int randomSpawn = Random.Range(0, Candies.Length);
 
-            yield return new WaitForSeconds(spawnInterval);
+            float randomX = Random.Range(-6.7f, 6.7f);
+
+            Vector3 randomPosition = new Vector3(randomX, transform.position.y, transform.position.z);
+
+            Instantiate(Candies[randomSpawn], randomPosition, transform.rotation);     
+
+            yield return new WaitForSeconds(timeDelay);
+
+
         }
+    }
+
+    public IEnumerator IncreaseSpawnSpeed()
+    {
+        while (true)
+        {
+        yield return new WaitForSeconds(10);
+        timeDelay -= 0.05f;
+        }
+        
     }
 
     public void StartSpawningCandies()
     {
         StartCoroutine("SpawnCandies");
+        
     }
 
     public void StopSpawningCandies()

@@ -98,7 +98,7 @@ public class L3GlobalAchievements : MonoBehaviour
         achActive = true;
         ach07Code = 007;
         PlayerPrefs.SetInt("Ach07", ach07Code);
-        //achSound.Play();
+        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
         ach07Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "COLLECTED";
         achDescription.GetComponent<Text>().text = "Congrats! You have collected 30 Pizzas!";
@@ -118,7 +118,7 @@ public class L3GlobalAchievements : MonoBehaviour
         achActive = true;
         ach08Code = 008;
         PlayerPrefs.SetInt("Ach08", ach08Code);
-        //achSound.Play();
+        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
         ach08Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "COLLECTED";
         achDescription.GetComponent<Text>().text = "Congrats! You have collected 150 delicious Junk Food!";
@@ -139,7 +139,7 @@ public class L3GlobalAchievements : MonoBehaviour
         achActive = true;
         ach09Code = 009;
         PlayerPrefs.SetInt("Ach09", ach09Code);
-        //achSound.Play();
+        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
         ach09Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "WELL PLAYED";
         achDescription.GetComponent<Text>().text = "Congrats! You haven't missed any junk food for 30 seconds!";
