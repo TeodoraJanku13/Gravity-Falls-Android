@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6861328429471342758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6861328429471342760}
+  - component: {fileID: 6861328429471342761}
+  - component: {fileID: 9194581686267519838}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6861328429471342760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861328429471342758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.36993697, y: -2.4982147, z: -0.30859375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6861328429471342761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861328429471342758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7dd19bd547d144ca0ddb45e1ed9532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: L1Theme
+    clip: {fileID: 8300000, guid: 66d3ea1546e4c754480fc8e5ef9fe4f1, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: L2Theme
+    clip: {fileID: 8300000, guid: 2f513e52a97a3cd4c98479f49fa1b9c1, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: L3Theme
+    clip: {fileID: 8300000, guid: 89bfe85f054051947a5c3f7b3c94dd7f, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: 2x_Pickup
+    clip: {fileID: 8300000, guid: 673bbd0ea279c5343979bd9e9141ae39, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Achievement_Completed_Popup
+    clip: {fileID: 8300000, guid: 3fd5ddcbaabe2474a8cdf1aa81981b89, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Heart_Lost
+    clip: {fileID: 8300000, guid: ec016effa159f924d9d63d8fa7157797, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Levels_Popup
+    clip: {fileID: 8300000, guid: f4ccde97a270604408b2d48255edcc6e, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Options_Off_On
+    clip: {fileID: 8300000, guid: ba9e03fc1c73bf84a804343733f1c46e, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Panel_Popup
+    clip: {fileID: 8300000, guid: 0bbfffa95b06acf449bdd684dc1075c5, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pig_Eat
+    clip: {fileID: 8300000, guid: 674f26067846d1d48a9c8f81384c7530, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: UI_Click_1
+    clip: {fileID: 8300000, guid: 188991d492ace1a4b87862904d138c3c, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: UI_Click_Back
+    clip: {fileID: 8300000, guid: 5b7be60da023400428c799d4339cb840, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Super_PickUp
+    clip: {fileID: 8300000, guid: b0f7bd966c0043a4288946563c843560, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Heart_Pickup
+    clip: {fileID: 8300000, guid: 2bc826dcafe077641b46fb0d89471aa1, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Level_Failed
+    clip: {fileID: 8300000, guid: 4502444b9bb1def4b8519968f9458a29, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Level_Win
+    clip: {fileID: 8300000, guid: 3d7b9afb6c3dda948982c9e80fae1be1, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Play_Options_Exit_Popup
+    clip: {fileID: 8300000, guid: 879ea807a2a033d4195acc7e769bc15a, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MainTheme
+    clip: {fileID: 8300000, guid: 5fb7b06892baacc46994b1c9778530d3, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!114 &9194581686267519838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861328429471342758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ef781dc2bf1c84f886b43f71f11d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 0}

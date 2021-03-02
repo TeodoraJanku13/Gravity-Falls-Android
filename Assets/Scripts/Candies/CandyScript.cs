@@ -20,7 +20,7 @@ public class CandyScript : MonoBehaviour
  {
         if (collider.gameObject.tag == "Player")
         {
-            FindObjectOfType<AudioManager>().Play("Pig_Eat"); 
+            AudioManager.instance.Play("Pig_Eat"); 
             if (player.pickedUpDouble == false)
             {                
                 GameManager.instance.IncrementScore();

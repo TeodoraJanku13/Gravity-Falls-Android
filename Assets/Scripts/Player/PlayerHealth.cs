@@ -43,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage()
     {
-        FindObjectOfType<AudioManager>().Play("Heart_Lost");
+        AudioManager.instance.Play("Heart_Lost");
 
         if (health ==1)
         {
@@ -60,6 +60,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void Heal()
     {
+        AudioManager.instance.Play("Heart_Pickup");
+
         if (health == maxHealth)
         {
             return;

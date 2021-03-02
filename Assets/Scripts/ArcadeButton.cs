@@ -22,20 +22,14 @@ public class ArcadeButton : MonoBehaviour
     {
         arcButton = GetComponent<Button>();
         arcButton.interactable = false;
-        // activateButton = false;
-
-       // Debug.Log(isCleared);
-
-
-      //  L3GlobalAchievements.storyModeCleared = isCleared;
-
+       // Debug.Log(L3GlobalAchievements.instance.achievement);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        //  UnlockBtn();
+        
         if (PlayerPrefs.HasKey("StoryModeCleared"))
         {
             PlayerPrefs.GetInt("StoryModeCleared");
@@ -45,13 +39,4 @@ public class ArcadeButton : MonoBehaviour
    
     }
 
-    public void UnlockBtn()
-    {
-
-         //   if (isCleared == 1)
-        //        {
-       //         arcButton.interactable = true;
-       //     }
-
-    }
 }

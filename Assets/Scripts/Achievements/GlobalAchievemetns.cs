@@ -8,16 +8,15 @@ public class GlobalAchievemetns : MonoBehaviour
     public GameManager gameManager;
     //GeneralVariables
     public GameObject achPanel;
-   // public AudioSource achSound;
     public bool achActive = false;
     public GameObject achTitle;
     public GameObject achDescription;
 
 
-    //Achivement 01 - 50Candies
+    //Achivement 01 - 100 Candies
     public GameObject ach01Image;
     public static int ach01Count;
-    public int ach01Trigger = 50;
+    public int ach01Trigger = 100;
     public int ach01Code;
     //Achievement 02  - Play 60 seconds
     public GameObject ach02Image;
@@ -86,15 +85,14 @@ public class GlobalAchievemetns : MonoBehaviour
 
     IEnumerator TriggerAch01()
     {
-        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
+        AudioManager.instance.Play("Achievement_Completed_Popup");
         ach1 = true;
         achActive = true;
         ach01Code = 001;
         PlayerPrefs.SetInt("Ach01", ach01Code);
-       // achSound.Play();
         ach01Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "COLLECTED";
-        achDescription.GetComponent<Text>().text = "Congrats! You have collected 50 candies!";
+        achDescription.GetComponent<Text>().text = "Congrats! You have collected 100 candies!";
         achPanel.SetActive(true);
         yield return new WaitForSeconds(7);
         //Reseting UI
@@ -111,7 +109,7 @@ public class GlobalAchievemetns : MonoBehaviour
         achActive = true;
         ach02Code = 002;
         PlayerPrefs.SetInt("Ach02", ach02Code);
-        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
+        AudioManager.instance.Play("Achievement_Completed_Popup");
         ach02Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "WELL PLAYED";
         achDescription.GetComponent<Text>().text = "Congrats! You have played for 60 seconds!";
@@ -139,7 +137,7 @@ public class GlobalAchievemetns : MonoBehaviour
         achActive = true;
         ach03Code = 003;
         PlayerPrefs.SetInt("Ach03", ach03Code);
-        FindObjectOfType<AudioManager>().Play("Achievement_Completed_Popup");
+        AudioManager.instance.Play("Achievement_Completed_Popup");
         ach03Image.SetActive(true);
         achTitle.GetComponent<Text>().text = "COLLECTED";
         achDescription.GetComponent<Text>().text = "Congrats! You have collected 3 power ups!";

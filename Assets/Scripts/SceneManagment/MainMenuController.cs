@@ -13,9 +13,10 @@ public class MainMenuController : MonoBehaviour
 
     private void Start()
     {
+      //  PlayerPrefs.DeleteAll();
         AudioManager.instance.Play("MenuTheme");
         AudioManager.instance.Play("Play_Options_Exit_Popup");
-        //FindObjectOfType<AudioManager>().Play("Play_Options_Exit_Popup");
+        
     }
 
     public void Play ()

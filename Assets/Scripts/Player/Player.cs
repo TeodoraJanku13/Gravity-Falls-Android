@@ -173,7 +173,6 @@ public class Player : MonoBehaviour
             textDisplay.SetActive(true);
             timerAnimation.timerAnimator.SetBool("TimerOn", true);
 
-           // GlobalAchievemetns.ach03Count += 1;
             powerupPickedUp += 1;
 
             timerAnimation.timerRun = true;

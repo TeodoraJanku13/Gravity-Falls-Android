@@ -1,7 +1,6 @@
 ﻿using UnityEngine.Audio;
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 
 public class AudioManager : MonoBehaviour
@@ -26,14 +25,14 @@ public class AudioManager : MonoBehaviour
 
         foreach (Sound s in sounds)
         {
-           s.source = gameObject.AddComponent<AudioSource>();
-           s.source.clip = s.clip;
-           s.source.volume = s.volume;
-           s.source.pitch = s.pitch;
-           s.source.loop = s.loop;
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
 
         }
-       
+
     }
 
     public void Play(string sound)
@@ -43,7 +42,11 @@ public class AudioManager : MonoBehaviour
         {
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
-        }    
+        }
+        else
+        {
+            s.source.Play();
+        }
     }
 
     public void StopPlaying(string sound)
@@ -53,8 +56,15 @@ public class AudioManager : MonoBehaviour
         {
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
-        }   
-        s.source.Stop();
+        }
+        else
+        {
+            s.source.Stop();
+        }
+    }
+    private void Update()
+    {
+        
     }
 
 }

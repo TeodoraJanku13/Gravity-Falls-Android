@@ -40,7 +40,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+ 
+        
         LevelMusic();
+        PlayerPrefs.DeleteKey("StoryModeCleared");
+
     }
 
 
@@ -58,6 +62,7 @@ public class GameManager : MonoBehaviour
                 break;
             case 1:
                 //AudioManager.instance.Play("MenuTheme");
+                AudioManager.instance.Play("Levels_Popup");
                 AudioManager.instance.StopPlaying("L2Theme");
                 AudioManager.instance.StopPlaying("L3Theme");
                 AudioManager.instance.StopPlaying("L1Theme");
@@ -82,6 +87,7 @@ public class GameManager : MonoBehaviour
                 break;
             case 5:
                 // AudioManager.instance.Play("MenuTheme");
+                AudioManager.instance.Play("Levels_Popup");
                 AudioManager.instance.StopPlaying("L2Theme");
                 AudioManager.instance.StopPlaying("L3Theme");
                 AudioManager.instance.StopPlaying("L1Theme");
@@ -106,6 +112,7 @@ public class GameManager : MonoBehaviour
                 AudioManager.instance.StopPlaying("MenuTheme");
                 break;
         }
+      
 
     }
 
@@ -127,7 +134,15 @@ public class GameManager : MonoBehaviour
         {
             score += 1;
             scoreText.text = score.ToString();
+            
+            if (score > PlayerPrefs.GetInt("HighScore", 0))
+            {
+                PlayerPrefs.SetInt("HighScore", score);
+                highScore.text = score.ToString();
+            }
+            
         }
+       
     }
 
     public void DoubleScore()
@@ -148,20 +163,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetHighScore()
-    {
-        if (score > PlayerPrefs.GetInt("HighScore", 0))
-        {
-        PlayerPrefs.SetInt("HighScore", score);
-            highScore.text = score.ToString();
-        }
-        
-    }
 
-    public void ResetHS()
-    {
-        PlayerPrefs.DeleteKey("HighScore");
-    }
 
     public void SuperCandies()
     {
@@ -170,18 +172,19 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        AudioManager.instance.Play("Panel_Popup");
+        AudioManager.instance.Play("Level_Failed");
         gameOverPanel.SetActive(true);
 
         heartContainer.SetActive(false);
 
         pauseButton.SetActive(false);
 
-        SetHighScore();
+
+        highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
+
 
         CandySpawner.instance.StopSpawningCandies();
 
-        //CHECK
         PowerupSpawner.instance.StopSpawningPowerups();
 
         Destroy(GameObject.FindWithTag("Player"));
@@ -194,8 +197,6 @@ public class GameManager : MonoBehaviour
         if (GameObject.Find("RightBtn") != null)
         {
             GameObject.Find("RightBtn").SetActive(false);
-
-
         }
 
     }
@@ -290,7 +291,9 @@ public class GameManager : MonoBehaviour
 
     IEnumerator WonLevel()
     {
-        yield return new WaitForSeconds(7);
+        
+        yield return new WaitForSeconds(0.5f);
+
         
         levelComplete.SetActive(true);
         heartContainer.SetActive(false);
